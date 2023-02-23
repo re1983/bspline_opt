@@ -1,6 +1,7 @@
 import numpy as np
 from se2 import SE2
 from so2 import SO2
+# from so2_and_se2 import SO2
 
 def unicycle_flat_states(pd, vd):
   return SE2(np.atan2(vd.item(1), vd.item(0)), pd.item(0), pd.item(1))
